@@ -18,9 +18,9 @@ function setup() {
     // The results of hat request will be returned in JSON (javaScript Object Notation)
             //The first part will always be the same |
     url = 'https://api.particle.io/v1/devices/' +
-    '24003c000651353530373132/' +    //your deviceID  (found in the particel console)
+    'yourDeviceID/' +    //your deviceID  (found in the particel console)
     'value' +                       // the variable you would like to get (This is set in the particle program)
-    '?access_token=0a8b763710c4db33921b0c94d3c994ec2a979146'; //your access token (found in the Particle Settings)
+    '?access_token=yourAccessToken'; //your access token (found in the Particle Settings)
 
 
     //Once we make our url string, we can use it in the function loadJSON, which is what makes the request
